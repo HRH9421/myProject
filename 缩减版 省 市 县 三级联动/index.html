@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三级联动实现原理</title>
+</head>
+
+<body>
+
+    <form action="">
+        省份:
+        <select class="" name="province" id="province" onchange="provinceChange()">
+            <option value="0">请选择</option>
+        </select>
+         市:
+        <select name="city" id="city" onchange="cityChange()">
+           <option value="0">请选择</option>
+        </select>
+        县:
+        <select class="" name="county" id="county">
+           <option value="0">请选择</option>
+        </select>
+
+    </form>
+
+
+<script src="js/index.js"></script>
+</body>
+
+</html>

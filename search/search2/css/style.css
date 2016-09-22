@@ -1,0 +1,39 @@
+body{
+  background-color: lightgray;
+}
+
+
+input{
+   width: 200px;
+   height: 30px;
+   margin-left: calc(50% - 100px);
+   background-image: url('../images/search.png');
+   background-size:30px 30px;
+   background-repeat: no-repeat;
+   background-position:left center;
+}
+
+.big{
+  border: 1px solid red;
+  margin-top: 20px;
+  background-color: white;
+  height: 128px
+  
+}
+div img{
+  /*display: block;*/
+  float: left;
+  height: 127px;
+}
+div div{
+width: 900px;
+
+}
+
+p{
+  color :red;
+
+}
+#info{
+  color: #969696;
+}

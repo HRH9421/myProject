@@ -18,12 +18,13 @@ function getCityCode(city) {
         dataType: 'json',
         success: function(res) {
             cityCode = res.retData['cityCode'];
+            getDayStatus(cityCode, city)
         },
         error: function(err) {
             console.log(err);
         },
     });
-    getDayStatus(cityCode, city)
+
 }
 
 function getDayStatus(code, city) {

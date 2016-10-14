@@ -1,7 +1,7 @@
 var fs = require('fs');
 var db = require('mongoose');
 
-db.connect('mongodb://localhost/book-db');
+db.connect('mongodb://localhost/book_db');
 
 var hsitory = db.model('book',{
   id:Number,

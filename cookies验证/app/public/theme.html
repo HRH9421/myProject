@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>换肤</title>
+</head>
+<body>
+  <ul>
+   <li><button id="purple">皮肤-red</button></li>
+   <li><button id="blue">皮肤-blue</button></li>
+   <li><button id="gray">皮肤-gray</button></li>
+   <li><button id="orange">皮肤-orange</button></li>
+ </ul>
+    <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+ <script>
+
+ if(localStorage.theme){
+   $('body').css('background-color',localStorage.theme);
+ }
+ $('button').click(function(){
+   $('body').css('background-color',this.id)
+   localStorage.theme = this.id
+ })
+ </script>
+
+
+</body>
+</html>

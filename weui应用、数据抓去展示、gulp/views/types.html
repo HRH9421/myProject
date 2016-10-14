@@ -1,0 +1,19 @@
+{{include './shared/_header'}}
+<header class='demos-header app-header'>
+    <h2 class="demos-title">分类列表</h2>
+</header>
+<div class="bd">
+    <div class="weui_cells weui_cells_access">
+        {{each types}}
+        <a class="weui_cell" href="/list/{{$value.id}}">
+            <div class="weui_cell_hd"><img src="{{$value.imgUrl}}"
+                    alt="" width="80"></div>
+            <div class="weui_cell_bd weui_cell_primary">
+                <p>{{$value.name}}</p>
+            </div>
+            <div class="weui_cell_ft">详细</div>
+        </a>
+        {{/each}}
+    </div>
+</div>
+{{include './shared/_footer'}}

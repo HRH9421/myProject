@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul id='ulList'>
+    </ul>
+    <a href="/list.html">列表页</a>
+    <script type='text/html' id='list'>
+        {{each list}}
+
+        <li><h4>{{$value.name}}</h4> </li>
+
+        {{/each}}
+
+    </script>
+    <script src='/lib/template.js'></script>
+
+    <script>
+    
+        var data = [{
+            name: "tom"
+        }, {
+            name: "Jerry"
+        }];
+        var html = template('list', {
+            list: data
+
+        });
+        document.getElementById("ulList").innerHTML = html;
+    </script>
+
+
+
+
+</body>
+
+</html>

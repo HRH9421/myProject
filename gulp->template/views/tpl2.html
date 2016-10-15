@@ -1,0 +1,13 @@
+{{include './shared/_header'}}
+{{include './shared/_nav'}}
+<div class="container">
+    <a href="/tpl">返回第一页</a>
+    <h2>这是第二页</h2>
+    <ul>
+        {{each list}}
+        <li>
+            <h3>{{$value.name}}</h3></li>
+        {{/each}}
+    </ul>
+</div>
+{{include './shared/_footer'}}

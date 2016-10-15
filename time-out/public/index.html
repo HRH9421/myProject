@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ajax-timeout</title>
+  <style>
+      html,
+      body {
+          height: 100%;
+      }
+  </style>
+</head>
+<body>
+
+
+  <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.js"></script>
+  <script src="http://cdn.bootcss.com/layer/2.4/layer.js"></script>
+    <script src='js/ajax.js'></script>
+  <script>
+  $.ajax({
+      url: '/api/data',
+      type: 'get',
+      dataType: 'json',
+      timeout: 3000,
+
+})
+
+
+  </script>
+
+
+</body>
+</html>
